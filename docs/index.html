@@ -1,0 +1,77 @@
+<!doctype html>
+<html lang="en">
+<head>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <title>I See You: Initial Multi-Robot LiDAR Registration with Mutual-Observation Checks</title>
+  <meta name="description" content="Infrastructure-free pre-mission registration of a multi-robot team from single LiDAR snapshots, with physical plausibility checks. SSRR 2026.">
+  <style>
+    :root {
+      --bg: #ffffff; --fg: #1d1d1f; --muted: #5f6368; --accent: #005aa9;
+      --card: #f5f6f8; --border: #dfe1e5;
+    }
+    @media (prefers-color-scheme: dark) {
+      :root { --bg: #121417; --fg: #e8eaed; --muted: #9aa0a6; --accent: #6ab0ff;
+              --card: #1c1f24; --border: #2e3238; }
+    }
+    * { box-sizing: border-box; }
+    body { margin: 0; background: var(--bg); color: var(--fg);
+           font: 17px/1.6 system-ui, -apple-system, "Segoe UI", Roboto, sans-serif; }
+    main { max-width: 900px; margin: 0 auto; padding: 48px 20px 64px; }
+    h1 { font-size: 2.1rem; line-height: 1.25; text-align: center; margin: 0 0 16px; }
+    h2 { font-size: 1.35rem; margin: 40px 0 12px; }
+    .authors, .venue { text-align: center; margin: 4px 0; }
+    .authors a { color: var(--fg); text-decoration: none; }
+    .venue, .affil { color: var(--muted); text-align: center; margin: 2px 0; }
+    .links { display: flex; flex-wrap: wrap; justify-content: center; gap: 12px; margin: 24px 0 32px; }
+    .btn { display: inline-block; padding: 9px 18px; border-radius: 999px; background: var(--fg);
+           color: var(--bg); text-decoration: none; font-weight: 600; font-size: 0.95rem; }
+    .btn.soon { background: var(--card); color: var(--muted); border: 1px solid var(--border);
+                cursor: default; }
+    figure { margin: 0; }
+    figure img { width: 100%; max-width: 450px; height: auto; border-radius: 8px; display: block;
+                 margin: 0 auto; }
+    figcaption { color: var(--muted); font-size: 0.92rem; margin: 8px auto 0; max-width: 450px; }
+    p { margin: 0 0 12px; text-align: justify; hyphens: auto; }
+    pre { background: var(--card); border: 1px solid var(--border); border-radius: 8px;
+          padding: 14px 16px; overflow-x: auto; font-size: 0.85rem; line-height: 1.45; }
+    footer { color: var(--muted); font-size: 0.85rem; text-align: center; margin-top: 56px; }
+    a { color: var(--accent); }
+  </style>
+</head>
+<body>
+<main>
+  <h1>I See You: Initial Multi-Robot LiDAR Registration with Mutual-Observation Checks</h1>
+  <p class="authors">Jonathan Lichtenfeld, Oskar von Stryk</p>
+  <p class="affil">SIM Group, Technical University of Darmstadt, Germany</p>
+  <p class="venue">IEEE International Symposium on Safety, Security, and Rescue Robotics (SSRR) 2026</p>
+
+  <div class="links">
+    <!-- Replace class="btn soon" with class="btn" and add href once available. -->
+    <span class="btn soon">Paper (coming soon)</span>
+    <span class="btn soon">Code (coming soon)</span>
+    <span class="btn soon">Dataset (coming soon)</span>
+  </div>
+
+  <figure>
+    <img src="static/teaser.jpg" alt="Four heterogeneous ground robots at a common staging area and their LiDAR scans aligned into one frame">
+    <figcaption>A team of four heterogeneous UGVs co-located at a common staging area (top) and their LiDAR scans
+      aligned into a common reference frame by our method (bottom), colored per robot.</figcaption>
+  </figure>
+
+  <h2>Code and Dataset</h2>
+  <p>Source code will be released soon. The dataset with four synchronized robots, seven scenes and ground truth
+    will be linked here.</p>
+
+  <h2>BibTeX</h2>
+<pre>@inproceedings{lichtenfeld2026iseeyou,
+  author    = {Lichtenfeld, Jonathan and von Stryk, Oskar},
+  title     = {I See You: Initial Multi-Robot LiDAR Registration with Mutual-Observation Checks},
+  booktitle = {Proc. IEEE Int. Symp. Safety, Security, and Rescue Robotics (SSRR)},
+  year      = {2026},
+}</pre>
+
+  <footer>SIM Group, Technical University of Darmstadt</footer>
+</main>
+</body>
+</html>
